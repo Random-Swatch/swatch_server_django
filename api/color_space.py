@@ -8,15 +8,24 @@ class ColorSpace:
     def __init__(self):
         pass
 
+    # This method returns the color space type.
+    # RGB, HSL
     def get_type(self):
         pass
 
+    # This method should return the syntax to use the color in Web UI.
+    # Ex: "hsl(29, 88%, 33%)"
     def get_syntax(self):
         pass
 
+    #  This method should return the CSS compatibility status of the color space.
+    #  Ex: If the color space is compatible with the latest CSS version,
+    #  this value should be `true` else, should be `false`.
     def get_is_css_compatible(self):
         pass
 
+    # This method should generate a random color from the space.
+    # And should return an object of the api.color.Color class
     def generate(self):
         pass
 
